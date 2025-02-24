@@ -12,15 +12,6 @@ import { useState } from "react";
 import GameScreen from "./screens/GameScreen";
 import colors from "./Constants/colors";
 
-function generateRandomBetween(min, max, exclude) {
-  const rndNum = Math.floor(Math.random() * (max - min)) + min;
-
-  if (rndNum === exclude) {
-    return generateRandomBetween(min, max, exclude);
-  } else {
-    return rndNum;
-  }
-}
 export default function App() {
   const [userNumber, setUserNumber] = useState(undefined);
 
@@ -31,7 +22,7 @@ export default function App() {
   let screen = <StartGameScreen onPickNumber={pickedNumberHandler} />;
 
   if (userNumber) {
-    screen = <GameScreen />; // Added userNumber prop
+    screen = <GameScreen userNumber={userNumber} />; // Added userNumber prop
   }
 
   return (

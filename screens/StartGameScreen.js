@@ -6,7 +6,7 @@ import {
   Platform,
   Alert,
 } from "react-native";
-import PrimaryButton from "../components/PrimaryButton";
+import PrimaryButton from "../components/ui/PrimaryButton";
 import { useState } from "react";
 import colors from "../Constants/colors";
 
