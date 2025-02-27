@@ -48,6 +48,7 @@ function GameScreen({ userNumber, onGameOver }) {
     );
     setCurrentGuess(newRndNumber);
   }
+  console.log(currentGuess);
   return (
     <View style={styles.screen}>
       <Title>Oponents gues</Title>
