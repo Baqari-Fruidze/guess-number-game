@@ -18,6 +18,10 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  numberText: { color: colors.accent500, fontSize: 36 },
+  numberText: {
+    color: colors.accent500,
+    fontSize: 36,
+    fontFamily: "open-sans-bold",
+  },
 });
 export default NumberContainer;
