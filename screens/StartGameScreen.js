@@ -45,6 +45,7 @@ function StartGameScreen({ onPickNumber }) {
           autoCorrect={false}
           onChangeText={numberInputHandler}
           value={enteredNumber}
+          inputMode="numeric"
         />
         <View style={styles.buttonsContainer}>
           <View style={styles.singleButtonContainer}>
