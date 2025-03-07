@@ -11,7 +11,7 @@ import StartGameScreen from "./screens/StartGameScreen";
 import { LinearGradient } from "expo-linear-gradient";
 import { useState } from "react";
 import GameScreen from "./screens/GameScreen";
-import colors from "./Constants/colors";
+import colors from "./constants/colors";
 import GameOverScreen from "./screens/GameOverScreen";
 import AppLoading from "expo-app-loading";
 
@@ -19,11 +19,11 @@ export default function App() {
   const [userNumber, setUserNumber] = useState(undefined);
   const [gameIsOver, setGameIsOver] = useState(true);
   const [guessRounds, setGuessRounds] = useState(0);
-  const fonstLoaded = useFonts({
-    "open-sans": require("../my-app/assets/fonts/OpenSans-Regular.ttf"),
-    "open-sans-bold": require("../my-app/assets/fonts/OpenSans-Bold.ttf"),
+  const fontsLoaded = useFonts({
+    "open-sans": require("./assets/fonts/OpenSans-Regular.ttf"),
+    "open-sans-bold": require("./assets/fonts/OpenSans-Bold.ttf"),
   });
-  if (!fonstLoaded) {
+  if (!fontsLoaded) {
     return <AppLoading />;
   }
 
@@ -62,7 +62,7 @@ export default function App() {
       style={styles.rootScreen}
     >
       <ImageBackground
-        source={require("../my-app/assets/images/dice.jpg")}
+        source={require("./assets/images/dice.jpg")}
         resizeMode="cover"
         style={styles.rootScreen}
         imageStyle={styles.backgroundImage}
