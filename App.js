@@ -5,6 +5,7 @@ import {
   View,
   ImageBackground,
   SafeAreaView,
+  Dimensions,
 } from "react-native";
 import { useFonts } from "expo-font";
 import StartGameScreen from "./screens/StartGameScreen";
